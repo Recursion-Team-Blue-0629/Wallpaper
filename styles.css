@@ -1,1 +1,86 @@
+.frame{
+    position: relative;
+}
 
+.bg-img{
+    height: 100vh;
+    width: auto;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation: fadein 30s infinite;
+    z-index: 1;
+}
+
+.quote{
+    position: absolute;
+    display: inline-block;
+    font-size: 3rem;
+    width: 60%;
+    text-shadow: #ffffff 0 0 10px;
+    top: 50%;
+    left: 23%;
+    opacity: 0;
+    animation: zoomin 30s infinite;
+    z-index: 2;
+}
+
+.wallpaper1{
+    animation-delay: 0s;
+}
+
+.wallpaper2{
+    animation-delay: 10s;
+}
+
+.wallpaper3{
+    animation-delay: 20s;
+}
+
+@keyframes fadein{
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes zoomin{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    20%{
+        transform: scale(0.5);
+        opacity: 0.5;
+    }
+    30%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    40%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    50%{
+        transform: scale(0.5);
+        opacity: 0.5;
+    }
+    
+    100%{
+        transform: scale(0);
+        opacity: 0;
+    }
+}
